@@ -47,8 +47,9 @@ searchBtn.onclick = () => {
                             <div class="card-block">
                                 <h4 class="card-title">${item.productName}</h4>
                                 <h6 class="card-subtitle text-muted">Items in stock: ${item.unitsInStock}</h6>
+                                <h6 class="card-subtitle text-muted" id="${item.productId}">${item.productId}</h6>
                                 <p class="card-text p-y-1">${item.unitPrice}</p>
-                                <a href="products.html/" class="card-link">More Details</a>
+                                <a href="products.html" class="card-link">More Details</a>
                             </div>
                         </div>
                     </div>  
@@ -61,7 +62,7 @@ searchBtn.onclick = () => {
                                 <h4 class="card-title">${item.productName}</h4>
                                 <h6 class="card-subtitle text-muted">Items in stock: ${item.unitsInStock}</h6>
                                 <p class="card-text p-y-1">${item.unitPrice}</p>
-                                <a href="products.html/" class="card-link">More Details</a>
+                                <a href="products.html?${item.productId}" class="card-link">More Details</a>
                             </div>
                         </div>
                     </div>  
@@ -71,3 +72,16 @@ searchBtn.onclick = () => {
         })
 
 }
+
+const displayProductInfo = () => {
+    const displayInfo = document.getElementById("productInfo")  
+    const productUrl = "http://localhost:8081/api/products/"
+
+
+}
+
+                // Get the current URL
+const url = new URL(window.location.href);
+
+// Get the query string parameters
+const params = new URLSearchParams(url.search);
