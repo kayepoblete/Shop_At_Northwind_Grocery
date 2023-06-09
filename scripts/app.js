@@ -49,7 +49,7 @@ searchBtn.onclick = () => {
                                 <h6 class="card-subtitle text-muted">Items in stock: ${item.unitsInStock}</h6>
                                 <h6 class="card-subtitle text-muted" id="${item.productId}">${item.productId}</h6>
                                 <p class="card-text p-y-1">${item.unitPrice}</p>
-                                <a href="products.html" class="card-link">More Details</a>
+                                <a href="products.html?${item.productId}" class="card-link">More Details</a>
                             </div>
                         </div>
                     </div>  
