@@ -73,15 +73,15 @@ searchBtn.onclick = () => {
 
 }
 
-const displayProductInfo = () => {
-    const displayInfo = document.getElementById("productInfo")  
-    const productUrl = "http://localhost:8081/api/products/"
+// const displayProductInfo = () => {
+//     const displayInfo = document.getElementById("productInfo")  
+//     const productUrl = "http://localhost:8081/api/products/"
 
 
-}
+// }
 
-                // Get the current URL
-const url = new URL(window.location.href);
+//                 // Get the current URL
+// const url = new URL(window.location.href);
 
-// Get the query string parameters
-const params = new URLSearchParams(url.search);
+// // Get the query string parameters
+// const params = new URLSearchParams(url.search);

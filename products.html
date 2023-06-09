@@ -22,26 +22,8 @@
 
     </div>
 
-    <button id="btn" onclick="displayInfo()">click</button>
+    <!-- <button id="btn" onclick="displayInfo()">click</button> -->
 
-
-    <script>
-        function displayInfo() {
-const url = new URL(window.location.href);
-
-//Get the query string parameters
-let params = new URLSearchParams(url.search);
-const div = document.getElementById("productInfo");
-let productnummer = params.slice(0, -1);
-div.innerHTML = productnummer;
-
-// Check if there are any query string parameters
-if (params.toString() === "") {
-  // Redirect to productsearch.html
-  window.location.href = "productsearch.html";
-}
-        }
-        </script>
   </main>
   <footer>
     <!-- place footer here -->
