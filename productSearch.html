@@ -32,15 +32,27 @@
     <div class="row text-center">
         <!-- FIRST DROP DOWN -->
         <div class="col-12 pt-4">
-          <select id="select1" class="btn dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true">
+          <select id="select1" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
             <option value="" selected="selected">Select One</option>
-            <option value="" selected="selected">Search by Category</option>
-            <option value="" selected="selected">View All</option>
+            <option value="category" selected="selected">Search by Category</option>
+            <option value="viewAll" selected="selected">View All</option>
           </select>
         </div>
+        <div class="col-12 pt-4">
+            <select id="select2" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+              <option value="" selected="selected">Select One</option>
+            </select>
+          </div>
         <!-- SEARCH BUTTON -->
         <div class="col pt-4 pb-4">
-          <button id="searchBtn" class="btn btn-outline-light" type="button">Search</button>
+          <button id="searchBtn" class="btn btn-outline-dark" type="button">Search</button>
+        </div>
+
+        <!-- DISPLAY PRODUCTS -->
+        <div class="py-5">
+            <div class="container">
+                <div class="row g-2" id="displayProducts"></div>
+            </div>
         </div>
 
     </div>
@@ -61,3 +73,4 @@
 </body>
 
 </html>
+
