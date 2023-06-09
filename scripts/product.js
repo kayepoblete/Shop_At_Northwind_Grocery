@@ -26,7 +26,7 @@ function displayInfo() {
     .then(product => {
       productInfo.innerHTML = 
       `
-      <div class="col-md-4">
+      <div class="col-md-6">
           <div class="card">
               <div class="card-block">
                   <h4 class="card-title">${product.productName}</h4>
